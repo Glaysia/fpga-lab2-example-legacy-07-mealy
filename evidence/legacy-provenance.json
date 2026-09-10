@@ -1,0 +1,21 @@
+{
+  "files": [
+    {
+      "file": "original/30mealyTop.v",
+      "source": "legacy/notebook/cpp/verilog/W8/srcs/30mealyTop.v",
+      "sha256": "7fd4e6266d2c57cc0ed48d0677d4cfcdfc0653f7ca4ee43eccaac4f4a250a841"
+    },
+    {
+      "file": "original/30mealyTb.v",
+      "source": "legacy/notebook/cpp/verilog/W8/srcs/30mealyTb.v",
+      "sha256": "498a57b403428e56724787f5ecc74a9b17c3e991a1476212f4f9c6a9d8b3ea65"
+    },
+    {
+      "file": "original/30mealyConst.xdc",
+      "source": "legacy/notebook/cpp/verilog/W8/srcs/30mealyConst.xdc",
+      "sha256": "d2ff1405740756db08ee4017f7e6ad3c23963698632ee0fd884cbf81cf044509"
+    }
+  ],
+  "differences": "원본은 x를 클록과 조합 출력 입력으로 함께 사용한다. 현재 회로는 clk·enable·bit_in을 나눠 입력 변경과 상태 전이를 따로 관찰한다. 원본의 CLOCK_DEDICATED_ROUTE FALSE를 현재 XDC에 옮기지 않는다.",
+  "execution_files": "src/, sim/, constraints/ are the corrected single-clock lesson; original/ is preserved for comparison"
+}
